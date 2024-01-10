@@ -7,9 +7,9 @@ import seaborn as sns
 
 from utils import parse_technologies
 
-PATH_TO_DATA = "../scrapped_data/python_senior.csv"
+PATH_TO_DATA = "scrapped_data/python_all.csv"
 
-OUTPUT_DIR = PATH_TO_DATA.split("/")[-1].replace(".csv", "")
+OUTPUT_DIR = os.path.join("data_analysis", "output_plots", PATH_TO_DATA.split("/")[-1].replace(".csv", ""))
 OUTPUT_DIR += "_" + datetime.now().strftime("%Y-%m-%d")
 
 
