@@ -115,7 +115,7 @@ def parse_page(url: str, driver: ChromeDriver, grade: str) -> list[VacancyDTO]:
 
 
 def main():
-
+    configure_logging()
     driver = ChromeDriver().web_driver
     for name, url in SPECIALIZATION_URLS.items():
         for grade in GRADES:
